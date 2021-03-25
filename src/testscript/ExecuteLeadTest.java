@@ -90,6 +90,20 @@ public class ExecuteLeadTest {
 					key.input(data, objectName);
 				}
 			}
+			if(a.get(i).equals("click")){
+				String keyword = (String) a.get(i);
+				String data = (String) a.get(i+1);
+				String objectName = (String) a.get(i+2);
+				String runmode = (String) a.get(i+3);
+				System.out.println(keyword);
+				System.out.println(data);
+				System.out.println(objectName);
+				System.out.println(runmode);
+				
+				if(runmode.equals("yes")) {
+					key.click(objectName);
+				}
+			}
 			
 		
 		
